@@ -1,0 +1,48 @@
+{
+  "homepage": "https://github.com/jdh2550/hyperapp-todo-simple#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "hyperapp-todo-simple",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jdh2550/hyperapp-todo-simple.git"
+  },
+  "scripts": {
+    "build": "taskr build release",
+    "preserve": "yarn run build",
+    "serve": "serve release -s -p 4500",
+    "start": "taskr watch"
+  },
+  "version": "0.0.1",
+  "author": "John Harding",
+  "bugs": {
+    "url": "https://github.com/jdh2550/hyperapp-todo-simple/issues"
+  },
+  "devDependencies": {
+    "@taskr/clear": "^1.1.0",
+    "@taskr/concat": "^1.1.0",
+    "@taskr/esnext": "^1.1.0",
+    "@taskr/htmlmin": "^1.1.0",
+    "@taskr/postcss": "^1.1.2",
+    "@taskr/rev": "^1.1.0",
+    "@taskr/sass": "^1.1.0",
+    "@taskr/uglify": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
+    "autoprefixer": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "rollup": "^0.56.1",
+    "rollup-plugin-buble": "^0.19.0",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-replace": "^2.0.0",
+    "serve": "^6.4.9",
+    "taskr": "^1.1.0",
+    "taskr-standard": "^1.0.1",
+    "workbox-build": "^2.1.2"
+  },
+  "dependencies": {
+    "@hyperapp/router": "^0.4.1",
+    "graphql-request": "^1.5.1",
+    "hyperapp": "^1.1.2"
+  }
+}
