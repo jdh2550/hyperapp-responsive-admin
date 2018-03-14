@@ -9,6 +9,7 @@ export const TodoListPage = ({state, actions}) => (
       <div class="w3-row-padding w3-margin-bottom">
         <TodoList done={false} actions={actions} state={state} />
         <TodoInput state={state} actions={actions} />
+        <h5><b>Completed Todos</b></h5>
         <TodoList done={true} actions={actions} state={state} />
       </div>
     </div>
@@ -37,13 +38,12 @@ const TodoInput = ({state, actions}) => (
 )
 
 const TodoItem = ({actions, todo}) => (
-  <div class='item row'>
-    <div class='left'>
+  <div class='w3-row'>
+    <div class='w3-left'>
       <RemoveButton actions={actions} id={todo.id} />
       <ToggleButton actions={actions} id={todo.id} />
     </div>
     <div
-      class={todo.done ? 'done right' : 'right'}
       // Prevent extra <div> elements inserted in contenteditable
       onclick={e => {
         if (!todo.done) {
